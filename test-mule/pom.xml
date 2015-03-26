@@ -16,6 +16,15 @@
     	<mule.tools.version>1.0</mule.tools.version>
 	</properties>
 
+	<scm>
+		<connection>scm:git:https://github.com/adamsdavis1976/mule-test.git</connection>
+		<url>scm:git:https://github.com/adamsdavis1976/mule-test.git</url>
+		<developerConnection>scm:git:https://github.com/adamsdavis1976/mule-test.git</developerConnection>
+		<tag>HEAD</tag>
+	</scm>
+
+
+
 	<build>
 		<plugins>
 			<plugin>
