@@ -23,13 +23,7 @@
 	  <tag>HEAD</tag>
   </scm>
 
-	<parent>
-		<groupId>com.mulesoft.consulting</groupId>
-		<artifactId>mule-app-parent</artifactId>
-		<version>1.0</version>
-	</parent>
-
-
+	
 	<build>
 		<plugins>
 			<plugin>
