@@ -36,47 +36,8 @@
 					</dependency>
 				</dependencies>
 			</plugin>
-			<plugin>
-				<groupId>org.apache.maven.plugins</groupId>
-				<artifactId>maven-failsafe-plugin</artifactId>
-				<version>2.18.1</version>
-				<executions>
-					<execution>
-						<goals>
-							<goal>integration-test</goal>
-							<goal>verify</goal>
-						</goals>
-						<configuration>
-							<summaryFile>target/failsafe-reports/failsafe-summary.xml</summaryFile>
-						</configuration>
-					</execution>
-				</executions>
-			</plugin>
 		</plugins>
 	</build>
-	<reporting>
-		<plugins>
-			<plugin>
-				<groupId>org.apache.maven.plugins</groupId>
-				<artifactId>maven-surefire-report-plugin</artifactId>
-				<version>2.18.1</version>
-				<reportSets>
-					<reportSet>
-						<id>integration-tests</id>
-						<reports>
-							<report>failsafe-report-only</report>
-						</reports>
-					</reportSet>
-					<reportSet>
-						<id>verify</id>
-						<reports>
-							<report>failsafe-report-only</report>
-						</reports>
-					</reportSet>
-				</reportSets>
-			</plugin>
-		</plugins>
-	</reporting>
 	<profiles>
 		<profile>
 			<id>integration-tests-muleesb</id>
@@ -132,6 +93,8 @@
 						<artifactId>maven-soapui-extension-plugin</artifactId>
 						<version>4.6.4.2</version>
 						<configuration>
+							<junitReport>true</junitReport>
+							<outputFolder>target/failsafe-reports</outputFolder>
 							<projectFile>${soapui.projectFile}</projectFile>
 							<skip>${skip.soapui.test}</skip>
 							<projectProperties>
