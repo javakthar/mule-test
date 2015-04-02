@@ -94,7 +94,6 @@
 						<version>4.6.4.2</version>
 						<configuration>
 							<junitReport>true</junitReport>
-							<outputFolder>target/failsafe-reports</outputFolder>
 							<projectFile>${soapui.projectFile}</projectFile>
 							<skip>${skip.soapui.test}</skip>
 							<projectProperties>
