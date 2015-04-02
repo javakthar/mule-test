@@ -98,7 +98,7 @@
 							<projectFile>${soapui.projectFile}</projectFile>
 							<skip>${skip.soapui.test}</skip>
 							<projectProperties>
-								<projectProperty>ENDPOINT_HOSTNAME=${soapui.endpoint.port}</projectProperty>
+								<projectProperty>ENDPOINT_PORT=${soapui.endpoint.port}</projectProperty>
 								<projectProperty>ENDPOINT_HOSTNAME=${soapui.endpoint.hostname}</projectProperty>
 								<projectProperty>ENDPOINT_USERNAME=${soapui.endpoint.username}</projectProperty>
 								<projectProperty>ENDPOINT_PASSWORD=${soapui.endpoint.password}</projectProperty>
