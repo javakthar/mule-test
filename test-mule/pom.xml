@@ -4,7 +4,7 @@
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>my.test</groupId>
 	<artifactId>test-mule</artifactId>
-	<version>1.0.68-SNAPSHOT</version>
+	<version>1.0.68</version>
 	<packaging>mule</packaging>
 	<name>Mule test-mule Application</name>
 
@@ -20,7 +20,7 @@
 		<connection>scm:git:https://github.com/adamsdavis1976/mule-test.git</connection>
 		<url>scm:git:https://github.com/adamsdavis1976/mule-test.git</url>
 		<developerConnection>scm:git:https://github.com/adamsdavis1976/mule-test.git</developerConnection>
-		<tag>HEAD</tag>
+		<tag>test-mule-1.0.68</tag>
 	</scm>
 
 	<parent>
